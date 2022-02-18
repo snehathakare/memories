@@ -1,13 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import { Form } from './components/Form';
+import { Post } from './components/Post';
+import { TopNav } from './components/TopNav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        React
-      </header>
-    </div>
+    <Container maxWidth="md">
+      <TopNav />
+      <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
+        <Post />
+        <Form />
+      </Box>
+
+    </Container>
+
   );
 }
 
