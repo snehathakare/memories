@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // parse application/json
 app.use(bodyParser.json({ extended: true }))
 
+//cors should be defined before the routes
 app.use(cors)
 
 app.use('/posts', postRoutes);

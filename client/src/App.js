@@ -4,8 +4,19 @@ import Box from '@mui/material/Box';
 import { Form } from './components/Form';
 import { Post } from './components/Post';
 import { TopNav } from './components/TopNav';
+import { getPosts } from './actions/post'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 
 function App() {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getPosts())
+
+  }, [dispatch])
+
   return (
     <Container maxWidth="md">
       <TopNav />
