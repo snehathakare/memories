@@ -1,7 +1,7 @@
 import './App.css';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import { Form } from './components/Form';
+import { Form } from './components/Form/Form';
 import { Post } from './components/Post';
 import { TopNav } from './components/TopNav';
 import { getPosts } from './actions/post'

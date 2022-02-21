@@ -4,7 +4,7 @@ export const postReducer = (posts = [], action) => {
             return action.payload
             break;
         case 'CREATE':
-            return posts
+            return [...posts, action.payload]
             break;
         default:
             return posts
